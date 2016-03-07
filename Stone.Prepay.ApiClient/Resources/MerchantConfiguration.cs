@@ -42,13 +42,13 @@ namespace Stone.Prepay.ApiClient.Resources
 
         #region Create
 
-        public BaseResponse<object> Create(string affiliationKey, CreateMerchantConfiguration merchantConfiguration)
+        public BaseResponse<object> Create(CreateMerchantConfiguration merchantConfiguration)
         {
             // Request
             RestRequest restRequest = new RestRequest("/v1/merchant/{affiliationKey}/config", Method.POST);
             restRequest.RequestFormat = DataFormat.Json;
             restRequest.AddJsonBody(merchantConfiguration);
-            restRequest.AddUrlSegment("affiliationKey", affiliationKey);
+            restRequest.AddUrlSegment("affiliationKey", merchantConfiguration.AffiliationKey);
 
             // Execute
             IRestResponse<object> restResponse = this.RestClient.Execute<object>(restRequest);
@@ -63,13 +63,13 @@ namespace Stone.Prepay.ApiClient.Resources
 
         #region Update
 
-        public BaseResponse<object> Update(string affiliationKey, UpdateMerchantConfiguration merchantConfiguration)
+        public BaseResponse<object> Update(UpdateMerchantConfiguration merchantConfiguration)
         {
             // Request
             RestRequest restRequest = new RestRequest("/v1/merchant/{affiliationKey}/config", Method.PUT);
             restRequest.RequestFormat = DataFormat.Json;
             restRequest.AddJsonBody(merchantConfiguration);
-            restRequest.AddUrlSegment("affiliationKey", affiliationKey);
+            restRequest.AddUrlSegment("affiliationKey", merchantConfiguration.AffiliationKey);
 
             // Execute
             IRestResponse<object> restResponse = this.RestClient.Execute<object>(restRequest);

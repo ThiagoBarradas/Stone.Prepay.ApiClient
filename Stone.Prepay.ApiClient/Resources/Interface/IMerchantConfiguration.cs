@@ -21,18 +21,16 @@ namespace Stone.Prepay.ApiClient.Resources.Interface
         /// <summary>
         /// Cria configuração para uma loja
         /// </summary>
-        /// <param name="affiliationKey">Chave da afiliação</param>
         /// <param name="merchantConfiguration">Dados de configuração para criação</param>
         /// <returns></returns>
-        BaseResponse<object> Create(string affiliationKey, CreateMerchantConfiguration merchantConfiguration);
+        BaseResponse<object> Create(CreateMerchantConfiguration merchantConfiguration);
 
         /// <summary>
         /// Atualiza a configuração de uma loja
         /// </summary>
-        /// <param name="affiliationKey">Chave da afiliação</param>
         /// <param name="merchantConfiguration">Dados de configuração para atualização</param>
         /// <returns></returns>
-        BaseResponse<object> Update(string affiliationKey, UpdateMerchantConfiguration merchantConfiguration);
+        BaseResponse<object> Update(UpdateMerchantConfiguration merchantConfiguration);
 
         /// <summary>
         /// Remove a configuração de uma loja

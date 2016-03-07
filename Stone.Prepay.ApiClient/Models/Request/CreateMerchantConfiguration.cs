@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 namespace Stone.Prepay.ApiClient.Models.Request
 {
     public class CreateMerchantConfiguration
-    {        
+    {
+        public string AffiliationKey { get; set; }
+
         public string AdvanceRateExpression { get; set; }
         
         public decimal AdvanceRate { get; set; }
