@@ -7,7 +7,7 @@
     <authors>MundiPagg</authors>
     <owners>MundiPagg</owners>
     <projectUrl>https://github.com/mundipagg/Stone.Prepay.ApiClient</projectUrl>
-    <iconUrl>http://www.stone.com.br/img/simbolo-stone.png</iconUrl>
+    <iconUrl>http://www.stone.com.br/img/stone32x32.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Stone Prepayment Public Api Client</description>
     <releaseNotes>
