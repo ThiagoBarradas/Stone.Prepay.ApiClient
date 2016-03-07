@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Stone.Prepay.ApiClient</id>
+    <version>$version$</version>
+    <title>Stone.Prepay.ApiClient</title>
+    <authors>MundiPagg</authors>
+    <owners>MundiPagg</owners>
+    <projectUrl>https://github.com/mundipagg/Stone.Prepay.ApiClient</projectUrl>
+    <iconUrl>http://www.stone.com.br/img/simbolo-stone.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Stone Prepayment Public Api Client</description>
+    <releaseNotes>
+      Update $version$
+    </releaseNotes>
+    <copyright>MundiPagg 2016</copyright>
+    <tags>MundiPagg Stone Prepayment Public Api Client</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="RestSharp" version="105.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Stone.Prepay.ApiClient\bin\Release\Stone.Prepay.ApiClient.dll" target="lib\net45" />
+  </files>
+</package>
